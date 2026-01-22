@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display-box">
+            <div class="screen">
+                <div id="watch">00:00:00</div>
+                <input id="display" type="text" readonly />
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <!-- Control buttons -->
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="DeleteList()">DEL</button>
+            <button class="btn" onclick="appendValue('/')">%</button>
+            <button class="btn" onclick="appendValue('*')">*</button>
+
+
+            <!--Row Number 01-->
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn" onclick="appendValue('-')">-</button>
+
+
+            <!--Row Number 2nd-->
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn" onclick="appendValue('+')">+</button>
+
+
+            <!--Row Number 3nd-->
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn  equal" onclick="calculate('=')">=</button>
+
+            <!--Row 4th-->
+            <button class="btn zero" onclick="appendValue('0')">0</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+
+
+        </div>
+    </div>
+
+    <div class="history">
+        <h2>History</h2>
+        <ul id="historylist"></ul>
+    </div>
+
+    <div class="designer">
+        <h3>JehangirFaiz_Designer</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
